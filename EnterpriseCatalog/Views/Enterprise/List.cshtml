@@ -1,0 +1,56 @@
+﻿@model IList<EnterpriseCatalog.Models.Enterprises>
+@using Embedded_Resource
+@{
+    ViewBag.Title = "List";
+}
+
+<h2>Cпсоск підприємств</h2>
+<br/>
+<table class="striped bordered center">
+    <tr>
+        <th>
+          Name
+        </th>
+        <th>
+           Address
+        </th>
+        <th>
+           Employeers
+        </th>
+        <th>
+           Income
+        </th>
+        <th>
+          CreationDate
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Address)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Employeers)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Income)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CreationDate)
+        </td>
+        <td>
+            <div class="waves-effect waves-light btn function-button">@Html.ActionLink("Edit", "Edit", new { id = item.Id })</div>
+            <div class="waves-effect waves-light btn function-button">@Html.ActionLink("Details", "List", "Workforce", new { id = item.Id }, null) </div>
+            <div class="waves-effect waves-light btn function-button red">@Html.ActionLink("Delete", "Delete", new { id = item.Id })</div>
+</td>
+    </tr>
+}
+
+</table>
+<br/>
+<div><a class="waves-effect waves-light btn" href="@Url.RouteUrl("createEnterprise")">@GlobalRes_ua.createNewEnterprise</a></div>

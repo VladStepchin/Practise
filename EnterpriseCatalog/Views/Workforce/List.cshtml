@@ -1,0 +1,58 @@
+﻿@using EnterpriseCatalog.Models
+@model Enterprises
+
+
+<h2>List</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="striped bordered">
+    <tr>
+        <th>
+            Name
+        </th>
+        <th>
+            Surname
+        </th>
+        <th>
+            Position
+        </th>
+        <th>
+           Experience
+        </th>
+        <th>
+          Salary
+        </th>
+        <th>
+           EnterpriseId
+        </th>
+        <th></th>
+    </tr>
+    @Model.Name
+@foreach (var emp in Model.Workforces) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => emp.Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => emp.Surname)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => emp.Position)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => emp.Experience)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => emp.Salary)
+        </td>      
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=emp.Id }) |
+            @Html.ActionLink("Details", "Details", new { id=emp.Id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=emp.Id })
+        </td>
+    </tr>
+}
+
+</table>
