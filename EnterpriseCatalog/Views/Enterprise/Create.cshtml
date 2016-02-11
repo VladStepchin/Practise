@@ -1,10 +1,10 @@
 ﻿@model EnterpriseCatalog.Models.Enterprises
-
+@using Embedded_Resource
 @{
     ViewBag.Title = "Create";
 }
 
-<h2>Cтворити нове підприємство</h2>
+<h2>@GlobalRes_ua.createNewEnterprise</h2>
 @using(Html.BeginForm())
 {
     @Html.AntiForgeryToken()
@@ -51,8 +51,8 @@
         </div>
 
         <p>
-            <button type="submit" class="waves-effect waves-light btn submit">Зберегти</button>
-            <button type="reset" class="waves-effect waves-light btn red" value="Save">@Html.ActionLink("Отмена", "List")</button>
+            <button type="submit" class="waves-effect waves-light btn submit">@GlobalRes_ua.create</button>
+            <button type="reset" class="waves-effect waves-light btn red" value="Save">@Html.ActionLink(GlobalRes_ua.decline, "List")</button>
         </p>
 }
 

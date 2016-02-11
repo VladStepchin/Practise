@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿@using Embedded_Resource
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
@@ -29,9 +30,9 @@
         <div class="nav-wrapper grey darken-3">
             <a href="@Url.RouteUrl("EnterpriseList")" class="brand-logo">Enterprise</a>
             <ul id="nav-mobile" class="right hide-on-med-and-down">
-                <li><a href="@Url.RouteUrl("about")">About</a></li>
-                <li><a href="@Url.RouteUrl("RSSFeed")">RSS FEED</a></li>
-                <li><a href="@Url.RouteUrl("LogOff")">LogOff</a></li>
+                <li><a href="@Url.RouteUrl("about")">@GlobalRes_ua.about</a></li>
+                <li><a href="@Url.RouteUrl("RSSFeed")">@GlobalRes_ua.RSS</a></li>
+                <li><a href="@Url.RouteUrl("LogOff")">@GlobalRes_ua.logOff</a></li>
             </ul>
         </div>
     </nav>

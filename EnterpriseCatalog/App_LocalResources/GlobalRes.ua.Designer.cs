@@ -61,11 +61,200 @@ namespace Embedded_Resource {
         }
         
         /// <summary>
+        ///   Ищет локализованную строку, похожую на Про сайт.
+        /// </summary>
+        public static string about {
+            get {
+                return ResourceManager.GetString("about", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Адреса.
+        /// </summary>
+        public static string address {
+            get {
+                return ResourceManager.GetString("address", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Кількість працівників.
+        /// </summary>
+        public static string amountOfEmployeers {
+            get {
+                return ResourceManager.GetString("amountOfEmployeers", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Створити.
+        /// </summary>
+        public static string create {
+            get {
+                return ResourceManager.GetString("create", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Ищет локализованную строку, похожую на Створити нове підприємство.
         /// </summary>
         public static string createNewEnterprise {
             get {
                 return ResourceManager.GetString("createNewEnterprise", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Дата створення.
+        /// </summary>
+        public static string dateOfCreation {
+            get {
+                return ResourceManager.GetString("dateOfCreation", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Відмінити.
+        /// </summary>
+        public static string decline {
+            get {
+                return ResourceManager.GetString("decline", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Видалити.
+        /// </summary>
+        public static string delete {
+            get {
+                return ResourceManager.GetString("delete", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Ви впевнені, що хочете видалити саме це підприємство?.
+        /// </summary>
+        public static string deleteConformation {
+            get {
+                return ResourceManager.GetString("deleteConformation", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Детальніше.
+        /// </summary>
+        public static string details {
+            get {
+                return ResourceManager.GetString("details", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Редагувати.
+        /// </summary>
+        public static string edit {
+            get {
+                return ResourceManager.GetString("edit", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Підприємство.
+        /// </summary>
+        public static string enterprise {
+            get {
+                return ResourceManager.GetString("enterprise", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Досвід роботи(в роках).
+        /// </summary>
+        public static string experience {
+            get {
+                return ResourceManager.GetString("experience", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Прибуток.
+        /// </summary>
+        public static string income {
+            get {
+                return ResourceManager.GetString("income", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Вийти.
+        /// </summary>
+        public static string logOff {
+            get {
+                return ResourceManager.GetString("logOff", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Ім&apos;я.
+        /// </summary>
+        public static string nameOfEmployeer {
+            get {
+                return ResourceManager.GetString("nameOfEmployeer", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Назва підприємства.
+        /// </summary>
+        public static string nameOfEnterprise {
+            get {
+                return ResourceManager.GetString("nameOfEnterprise", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Посада.
+        /// </summary>
+        public static string position {
+            get {
+                return ResourceManager.GetString("position", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на RSS.
+        /// </summary>
+        public static string RSS {
+            get {
+                return ResourceManager.GetString("RSS", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Заробітня плата.
+        /// </summary>
+        public static string salary {
+            get {
+                return ResourceManager.GetString("salary", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Зберегти.
+        /// </summary>
+        public static string save {
+            get {
+                return ResourceManager.GetString("save", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Прізвище.
+        /// </summary>
+        public static string surname {
+            get {
+                return ResourceManager.GetString("surname", resourceCulture);
             }
         }
     }

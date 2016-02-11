@@ -9,19 +9,19 @@
 <table class="striped bordered center">
     <tr>
         <th>
-          Name
+          @GlobalRes_ua.nameOfEnterprise
         </th>
         <th>
-           Address
+           @GlobalRes_ua.address
         </th>
         <th>
-           Employeers
+           @GlobalRes_ua.amountOfEmployeers
         </th>
         <th>
-           Income
+           @GlobalRes_ua.income
         </th>
         <th>
-          CreationDate
+          @GlobalRes_ua.dateOfCreation
         </th>
         <th></th>
     </tr>
@@ -44,9 +44,9 @@
             @Html.DisplayFor(modelItem => item.CreationDate)
         </td>
         <td>
-            <div class="waves-effect waves-light btn function-button">@Html.ActionLink("Edit", "Edit", new { id = item.Id })</div>
-            <div class="waves-effect waves-light btn function-button">@Html.ActionLink("Details", "List", "Workforce", new { id = item.Id }, null) </div>
-            <div class="waves-effect waves-light btn function-button red">@Html.ActionLink("Delete", "Delete", new { id = item.Id })</div>
+            <div class="waves-effect waves-light btn function-button">@Html.ActionLink(GlobalRes_ua.edit, "Edit", new { id = item.Id })</div>
+            <div class="waves-effect waves-light btn function-button">@Html.ActionLink(GlobalRes_ua.details, "List", "Workforce", new { id = item.Id }, null) </div>
+            <div class="waves-effect waves-light btn function-button red">@Html.ActionLink(GlobalRes_ua.delete, "Delete", new { id = item.Id })</div>
 </td>
     </tr>
 }

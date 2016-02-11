@@ -1,14 +1,14 @@
 ﻿@model EnterpriseCatalog.Models.Enterprises
-
+@using Embedded_Resource
 @{
     ViewBag.Title = "Delete";
 }
 
-<h2>Delete</h2>
+<h2>@GlobalRes_ua.delete</h2>
 
-<h3>Are you sure you want to delete this?</h3>
+<h3>@GlobalRes_ua.deleteConformation</h3>
 <fieldset>
-    <legend>Підприємство</legend>
+    <legend>@GlobalRes_ua.enterprise</legend>
 
     <div class="display-label">
          @Html.DisplayNameFor(model => model.Name)
@@ -48,7 +48,7 @@
 @using (Html.BeginForm()) {
     @Html.AntiForgeryToken()
     <p>
-        <button type="submit" class="waves-effect waves-light btn submit red">Видалити</button>
-        <button type="reset" class="waves-effect waves-light btn " value="Save">@Html.ActionLink("Отмена", "List")</button>  
+        <button type="submit" class="waves-effect waves-light btn submit red">@GlobalRes_ua.delete</button>
+        <button type="reset" class="waves-effect waves-light btn " value="Save">@Html.ActionLink(GlobalRes_ua.decline, "List")</button>  
     </p>
 }
